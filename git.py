@@ -28,3 +28,4 @@
 # ssh-keygen -t rsa -C "u email adrress" 创建自己电脑的SSH-KEY,导入github,才可以链接GITHUB,克隆,push,pull
 # git remote add origin github_ip_address.git 与github上的仓库相关联
 # git push -u origin master 将本地库的所有内容推送到远程库上
+# git push origin master 只要第一此推送和关联后,就可以使用此命令
