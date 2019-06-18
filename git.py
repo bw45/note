@@ -29,7 +29,18 @@
 # git remote add origin github_ip_address.git 与github上的仓库相关联
 # git push -u origin master 将本地库的所有内容推送到远程库上
 # git push origin master 只要第一此推送和关联后,就可以使用此命令
-# git clone github_ip_address 从github上仓库克隆文件(条件是有权限)
+# git clone github_ip_address 从github上仓库克隆文件(条件是有权限;克隆之后就会自动建立链接)
 
 #####part_07_分支
-page_33
+# git checkout -b dev 创建并选择分支dev
+# git branch dev 创建分支dev
+# git checkout dev 选择分支dev
+# git branch 查看分支情况
+# git merge dev 合并分支dev快速模式
+# git merge --no-ff -m 'comment' dev 合并分支普通模式,日志会显示合并记录
+# git branch -d dev 删除分支dev
+
+######part_08_解决冲突
+# 对文件进行修改后再添加提交
+# git log 查看详细提交日志
+# git log --graph --pretty=oneline 查看简单提交日志
