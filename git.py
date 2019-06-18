@@ -29,3 +29,7 @@
 # git remote add origin github_ip_address.git 与github上的仓库相关联
 # git push -u origin master 将本地库的所有内容推送到远程库上
 # git push origin master 只要第一此推送和关联后,就可以使用此命令
+# git clone github_ip_address 从github上仓库克隆文件(条件是有权限)
+
+#####part_07
+page_33
