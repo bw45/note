@@ -44,3 +44,52 @@
 # 对文件进行修改后再添加提交
 # git log 查看详细提交日志
 # git log --graph --pretty=oneline 查看简单提交日志
+
+######part_09_保存临时工作状态
+# git stash 把当前工作现场存储起来
+# git stash list 查看保存的工作现场
+# git stash pop 恢复工作区同时把保存的内容删除
+# git stash apply 恢复工作区
+# git stash drop 删除工作区
+
+######part_10_远程库链接分支冲突
+# git remote -v 查看详细远程库信息
+# git pull 从远程库拉取更新文件
+
+######part_11_标签
+# git tag v1.0 给当前分支打标签
+# git tag 查看当前分支所有标签
+# git tag v1.0 number 给历史版本打标签
+# git show v1.0 显示该标签详细信息
+# git tag -a v1.0 -m 'comment' number
+# git tag -d v1.0 删除标签
+# git push origin v1.0 推送单一标签
+# git push origin tags 推送所有标签
+# git push origin :refs/tags/v1.0 先本地删除标签，再推送至远程库删除
+
+######part_12
+# 在github上，可以任意FORK开源仓库
+# 可以推送pull request给官方仓库来贡献代码
+
+######part_13_配置
+# git config --global color.ui true 让GIT显示颜色
+# 在git工作区根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去，git就会自动会略这些文件
+# #windows:
+# thumbs.db
+# desktop.ini
+# #python:
+# *.py
+# *.so
+# 同样.gitignore文件也要提交到GIT
+# git config --global alias.st status 将命令简化
+# git配置文件在.git/config中
+
+######part_14_搭建自己的远程仓库
+# 安装git：sudo apt-get install git
+# 创建git用户：sudo adduser git
+# 创建证书登录：把所有公匙导入到git/.ssh/authorized_keys文件里，一行一个
+# 初始化git仓库：sudo git init --bare sample.git
+# 将owner改为git：sudo chown -R git:git sample.git
+# 禁用shell登录：编辑/etc/passwd文件，将git:x:1001:1001:,,,:/home/git:/bin/bash改为git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell
+# 最后就可以克隆远程仓库了...
+
