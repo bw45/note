@@ -425,31 +425,30 @@
 ###########重复学习重点章节
 # 重要章节：第15章、第17章、第19章、第21章、第23章、第24章、第30章、第33章
 
-import collection1 as c1
+###########堆(可直接对列表进行操作，不需要转换类型)
+# from heapq import *
+# heappush(listobj,x):将X压入堆中
+# heappop(listobj):从堆中弹出最小元素并删除
+# heapify(listobj):让列表具备堆特征
+# heapreplace(listobj,x):弹出最小元素，并将X压入堆中
+# nlargest(n,iter):返回iter中n个最大的元素
+# nsmallest(n,iter):返回iter中n个最小的元素
 
-print(dir(c1))
+###########双端队列
+# from collections import deque
 
-@c1.FuncTimeCounter
-def whil():
-	a=10000
-	b=[]
-	while a>0:
-		b.append(a)
-		a=a-1
-	return b
+###########测试
+# unittest库
+# doctest库
 
-@c1.FuncTimeCounter
-def rang():
-	c=[]
-	for i in range(10000,1,-1):
-		c.append(i)
-	return c
+###########性能测试
+# timeit.timeit(stmt='func',setup='from __main__ import func_name',number=循环次数)
+# cProfile.run('func')
 
-whil()
-rang()
-
-
-
-
-
-
+###########深入学习
+# hunt、thomas《程序员修炼之道》
+# martin《重构》
+# gamma、richard《设计模式》
+# kent beck《测试驱动开发》
+# thomas《算法导论》
+# 高德纳《计算机程序设计艺术》
